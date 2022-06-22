@@ -1,4 +1,4 @@
-# CyberArk-Privilge-Cloud-Installation
+# CyberArk Privilge Cloud Installation
 CyberArk Privilege Cloud Installation Notes
 
 ## 01 - Pre-Requisites Script
