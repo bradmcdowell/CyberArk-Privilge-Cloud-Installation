@@ -46,7 +46,7 @@ https://<customer>.privilegecloud.cyberark.com/PasswordVault/logoff.aspx
 User Attributes & Claims
 •  Unique User Identifier: 
 ```
-samaccountname 
+samaccountname
 ```
 
 Provide CyberArk:
@@ -67,7 +67,7 @@ Get-ChildItem "Cert:\LocalMachine\My"
 $PATH = (Get-WmiObject -class "Win32_TSGeneralSetting" -Namespace root\cimv2\terminalservices)
 
 #Execute the change
-Set-WmiInstance -Path $PATH -argument @{SSLCertificateSHA1Hash="thumbprint"}
+Set-WmiInstance -Path $PATH -argument @{SSLCertificateSHA1Hash="<INSERT-Thumbprint-HERE>"}
 
 ```
 
@@ -119,20 +119,20 @@ cd /home/localadmin/PSMP/
 ### Unzip CyberArk Files
 ```
 ls
-unzip PrivilegedSessionManagerSSHProxy-RHELinux8-Intel64-Rls-v12.2.zip
-unzip psmpwiz122.zip
+unzip PrivilegedSessionManagerSSHProxy-RHELinux8-Intel64-Rls-v1X.X.zip
+unzip psmpwiz1XX.zip
 ```
 ### Set the follwoing files to exexutable
 ```
 ls -ltr
-chmod 755 CARKpsmp-12.02.0.10.x86_64.rpm
+chmod 755 CARKpsmp-1X.xx.xx.xx.rpm
 chmod 755 CreateCredFile
-chmod 755 psmpwiz122.sh
+chmod 755 psmpwiz1XX.sh
 ```
 
 ### Run the PSMP install script
 ```
-./psmpwiz122.sh
+./psmpwiz1XX.sh
 ```
   
 
