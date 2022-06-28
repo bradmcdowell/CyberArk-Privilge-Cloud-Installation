@@ -143,6 +143,8 @@ https://docs.cyberark.com/Product-Doc/OnlineHelp/PrivCloud/Latest/en/Content/Pri
 
 ##
 
+## 08 - PSM Native Access RDP
+
 ```
 full address:s:PSMHOSTNAME
 alternate shell:s:psm /u localadmin01 /a win1.cybr.com /c PSM-RDP
