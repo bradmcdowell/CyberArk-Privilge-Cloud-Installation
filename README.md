@@ -143,4 +143,11 @@ https://docs.cyberark.com/Product-Doc/OnlineHelp/PrivCloud/Latest/en/Content/Pri
 
 ##
 
+```
+full address:s:PSMHOSTNAME
+alternate shell:s:psm /u localadmin01 /a win1.cybr.com /c PSM-RDP
+username:s:john
+enablecredsspsupport:i:0
+```
+
 
