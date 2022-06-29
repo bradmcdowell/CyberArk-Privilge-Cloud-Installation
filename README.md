@@ -151,5 +151,6 @@ alternate shell:s:psm /u localadmin01 /a win1.cybr.com /c PSM-RDP
 username:s:john
 enablecredsspsupport:i:0
 ```
-
+If using RDCMan
+https://cyberark-customers.force.com/s/article/How-to-setup-Remote-Desktop-Connection-Manager
 
