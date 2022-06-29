@@ -154,3 +154,9 @@ enablecredsspsupport:i:0
 If using RDCMan
 https://cyberark-customers.force.com/s/article/How-to-setup-Remote-Desktop-Connection-Manager
 
+
+CPM Troubleshooting
+
+https://cyberark-customers.force.com/s/article/How-does-CPM-manage-Windows-accounts-passwords
+
+
