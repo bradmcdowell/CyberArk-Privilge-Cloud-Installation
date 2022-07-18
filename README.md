@@ -5,18 +5,22 @@ CyberArk Privilege Cloud Installation Notes
 Download Pre-Requisites Script from the SFE.
 
 CyberArk Privilege Cloud Tools
+
 https://cyberark-customers.force.com/mplace/s/#a352J000000GWAZQA4-a392J000002tNgLQAU
 
 CyberArk Privilege Cloud
+
 https://cyberark-customers.force.com/mplace/s/#software-aK42J0000000DSrSAM-
 
 
 ## 02 - Connector Install
 
 Hardware Requirements
+
 https://docs.cyberark.com/Product-Doc/OnlineHelp/PrivCloud/Latest/en/Content/Privilege%20Cloud/PrivCloud-sys-req-connector.htm?tocpath=Setup%7CSystem%20requirements%7C_____2
 
 Network Requirements
+
 https://docs.cyberark.com/Product-Doc/OnlineHelp/PrivCloud/Latest/en/Content/Privilege%20Cloud/PrivCloud-sys-req-networks.htm?tocpath=Setup%7CSystem%20requirements%7C_____1
 
 
