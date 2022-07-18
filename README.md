@@ -4,7 +4,11 @@ CyberArk Privilege Cloud Installation Notes
 ## 01 - Pre-Requisites Script
 Download Pre-Requisites Script from the SFE.
 
-https://cyberark-customers.force.com/s/article/Privilege-Cloud-How-to-run-the-PSMCheck
+CyberArk Privilege Cloud Tools
+https://cyberark-customers.force.com/mplace/s/#a352J000000GWAZQA4-a392J000002tNgLQAU
+
+CyberArk Privilege Cloud
+https://cyberark-customers.force.com/mplace/s/#software-aK42J0000000DSrSAM-
 
 
 ## 02 - Connector Install
