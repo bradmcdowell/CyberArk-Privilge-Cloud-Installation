@@ -12,6 +12,10 @@ CyberArk Privilege Cloud
 
 https://cyberark-customers.force.com/mplace/s/#software-aK42J0000000DSrSAM-
 
+CyberArk Identity connector
+
+https://edge.idaptive.app/ProxyDownload/CyberArk-Identity-Management-Suite-win64.zip
+
 
 ## 02 - Connector Install
 
@@ -25,41 +29,11 @@ https://docs.cyberark.com/Product-Doc/OnlineHelp/PrivCloud/Latest/en/Content/Pri
 
 
 
-## 03 - Secure Tunnel and LDAPs
+## 03 - Secure Tunnel
 
-LDAP Certificate Tool
+Install Secure Tunnel
 
-## 04 - SAML Authentiation
-
-
-In Azure Active Directory Domain Services console, create a new Enterprise Application (non-gallery application).
-Configure Mode as: SAML-based Sign-on
-Basic SAML Configuration:
-Identifier (Entity ID): 
-```
-PasswordVault
-```
-Reply URL: 
-```
-https://<customer>.privilegecloud.cyberark.com/PasswordVault/api/auth/saml/logon
-```
-Check 'Show advanced URL settings' > Sign on URL: 
-```
-https://<customer>.privilegecloud.cyberark.com/PasswordVault/v10/logon/saml
-```
-Logout URL:
-```
-https://<customer>.privilegecloud.cyberark.com/PasswordVault/logoff.aspx
-```
-User Attributes & Claims
-•  Unique User Identifier: 
-```
-samaccountname
-```
-
-Provide CyberArk:
-In 'SAML Signing Certificate':
-The 'App Federation Metadata Url' which will contain the information from above (Recommended)
+## 04 - CyberArk Identity
 
 
 ## 05 - PSM Certificate and HTML5 Gateway
