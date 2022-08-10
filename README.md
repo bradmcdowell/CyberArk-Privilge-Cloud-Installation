@@ -153,7 +153,17 @@ Get-WinEvent -LogName "Microsoft-Windows-AppLocker/EXE and DLL" |Where-Object {$
 
 ## 10 - Logs
 
+CPM
 ```
 cat -Wait -Tail 50 .\pm.log
+```
+
+PSM
+
+
+Secure Tunnel
+
+```
+cat -Wait -Tail 50 "C:\Program Files\CyberArk\PrivilegeCloudSecureTunnel\logs\privilege-cloud-securetunnel-service.log"
 ```
 
