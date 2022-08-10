@@ -143,4 +143,17 @@ CPM Troubleshooting
 
 https://cyberark-customers.force.com/s/article/How-does-CPM-manage-Windows-accounts-passwords
 
-##
+## 09 - App Locker Troubleshooting
+
+This comand is usfule to determine what applications cant run because of AppLocker.
+
+```
+Get-WinEvent -LogName "Microsoft-Windows-AppLocker/EXE and DLL" |Where-Object {$_.LevelDisplayName -ne "Information"} |Format-Table -AutoSize| Out-File C:\AppLocker.txt -Width 1000
+```
+
+## 10 - Logs
+
+```
+cat -Wait -Tail 50 .\pm.log
+```
+
