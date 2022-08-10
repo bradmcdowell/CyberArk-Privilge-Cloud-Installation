@@ -1,4 +1,4 @@
-# CyberArk Privilge Cloud Installation
+# CyberArk Privilege Cloud Installation
 CyberArk Privilege Cloud Installation Notes
 
 ## 01 - Pre-Requisites Script
@@ -41,7 +41,7 @@ Install Secure Tunnel
 ### PSM Server Change Certificate
 
 ```
-#Copy the tumbprint for the certificate you have the Private Key of (usually the personal certificate of the machine unless the customer followed your instructions to build the CA from scratch)
+#Copy the thumbprint for the certificate you have the Private Key of (usually the personal certificate of the machine unless the customer followed your instructions to build the CA from scratch)
 
 Get-ChildItem "Cert:\LocalMachine\My"
 
@@ -104,7 +104,7 @@ ls
 unzip PrivilegedSessionManagerSSHProxy-RHELinux8-Intel64-Rls-v1X.X.zip
 unzip psmpwiz1XX.zip
 ```
-### Set the follwoing files to exexutable
+### Set the following files to executable
 ```
 ls -ltr
 chmod 755 CARKpsmp-1X.xx.xx.xx.rpm
@@ -145,7 +145,7 @@ https://cyberark-customers.force.com/s/article/How-does-CPM-manage-Windows-accou
 
 ## 09 - App Locker Troubleshooting
 
-This comand is usfule to determine what applications cant run because of AppLocker.
+This command is useful to determine what applications can’t run because of AppLocker.
 
 ```
 Get-WinEvent -LogName "Microsoft-Windows-AppLocker/EXE and DLL" |Where-Object {$_.LevelDisplayName -ne "Information"} |Format-Table -AutoSize| Out-File C:\AppLocker.txt -Width 1000
