@@ -171,7 +171,7 @@ cat -Wait -Tail 50 "C:\Program Files\CyberArk\PrivilegeCloudSecureTunnel\logs\pr
 
 -- PSM Components -- Section
 ```
-<Application Name="MMC" Type="Exe" SessionType="*" Path="c:\windows\system32\mmc.exe" Method="Hash" />
+  <Application Name="MMC" Type="Exe" SessionType="*" Path="c:\windows\system32\mmc.exe" Method="Hash" />
 ```
 
 -- Allowed DLLs -- located at the last section
