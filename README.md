@@ -167,3 +167,16 @@ Secure Tunnel
 cat -Wait -Tail 50 "C:\Program Files\CyberArk\PrivilegeCloudSecureTunnel\logs\privilege-cloud-securetunnel-service.log"
 ```
 
+## 11 - RSAT
+
+<!-- PSM Components →> Section
+```
+<Application Name="MMC" Type="Exe" SessionType="*" Path="c:\windows\system32\mmc.exe" Method="Hash" />
+```
+
+<!-- Allowed DLLs --> located at the last section
+
+```
+  <Libraries Name="CALIBEAY32102O" Type="Dll" Path="%OSDRIVE%\ORACLE\INSTANTCLIENT\CALIBEAY32102O.DLL" Method="Path" />
+  <Libraries Name="CALIBEAY32102O" Type="Dll" Path="%OSDRIVE%\ORACLE\INSTANTCLIENT\CALIBEAY32102U.DLL" Method="Path" />
+```
