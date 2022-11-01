@@ -183,18 +183,18 @@ cat -Wait -Tail 50 "C:\Program Files\CyberArk\PrivilegeCloudSecureTunnel\logs\pr
 
 ## 12 - CyberArk PSM with Microsoft Edge
 
--- Install Microsoft Edge
+### Install Microsoft Edge
 Download and install microsoft edge. Ensure you select the correct operating system
 https://www.microsoft.com/en-us/edge?form=MA13FJ#evergreen
 
--- Install Edge Driver
+### Install Edge Driver
 Check you version of Microsoft Edge. 1XX.X.XXXX.XX and download the x86 driver version.
 https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
 
 Extract the zip file and copy the msedgedriver.exe to the follwoing location:
 "C:\Program Files (x86)\Cyberark\PSM\Components\msedgedriver.exe"
 
--- Secure Web Application Connectors Framework
+### Secure Web Application Connectors Framework
 
 https://cyberark-customers.force.com/mplace/s/#a3550000000EiCMAA0-a3950000000jjUwAAI
 
@@ -203,7 +203,7 @@ Copy all contents in the folder WebAppDispatcher-v13.0.0.87\Components
 And paste in C:\Program Files (x86)\Cyberark\PSM\Components 
 This process will overwrite many files.
 
--- App locker
+### App locker
 
 In the"-- Allowed DLLs --" section.
 
