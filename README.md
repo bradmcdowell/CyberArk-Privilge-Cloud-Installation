@@ -205,21 +205,41 @@ This process will overwrite many files.
 
 ### App locker
 
-In the"-- Allowed DLLs --" section.
+In the"-- Allowed DLLs --" section add the follwoing line
 
 ```
     <Libraries Name="NATIVEIMAGES" Type="Dll" Path="%WINDIR%\ASSEMBLY\NATIVEIMAGES_V4.0.30319_32\*" Method="Path" SessionType="*" />
 ```
 
-In the "-- Microsoft Edge process --" secion
+In the "-- Microsoft Edge process --" section, uncomment the Edge application and add the EdgeDrive line.
 ```
     <Application Name="Edge" Type="Exe" Path="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" Method="Publisher" />
     <Application Name="EdgeDriver" Type="Exe" Path="C:\Program Files (x86)\Cyberark\PSM\Components\msedgedriver.exe" Method="Publisher" />
 
 ```
 
-In the "-- Allowed DLLs --"
+In the "-- Allowed DLLs --" section add NATIVEIMAGES.
+NOTE: this is different to the NATIVEIMAGES above.
 
 ```
     <Libraries Name="NATIVEIMAGES" Type="Dll" Path="%WINDIR%\ASSEMBLY\NATIVEIMAGES_V4.0.30319_32\*" Method="Path" />
 ```
+
+### PSM Components Options configuration
+
+Administration  -> Configuration Options
+
+Configuraitons -> Connection Components
+
+Duplicate an existing Chrome Connecton Component
+
+Configuraitons -> Connection Components -> *Connection Component ID* -> Target Settings
+Change the value for "ClientApp" form Chrome to Edge
+
+Configuraitons -> Connection Components -> *Connection Component ID* -> Target Settings -> Client Specific
+BrowserPath - Value = C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+RunValidations - Vaule = No
+EnableTrace - Value = Yes or No
+
+
+
