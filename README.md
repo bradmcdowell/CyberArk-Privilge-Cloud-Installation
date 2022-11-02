@@ -187,7 +187,7 @@ cat -Wait -Tail 50 "C:\Program Files\CyberArk\PrivilegeCloudSecureTunnel\logs\pr
 Download and install microsoft edge. Ensure you select the correct operating system
 https://www.microsoft.com/en-us/edge?form=MA13FJ#evergreen
 
-### Install Edge Driver
+#### Install Edge Driver
 Check you version of Microsoft Edge. 1XX.X.XXXX.XX and download the x86 driver version.
 https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
 
