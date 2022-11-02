@@ -71,7 +71,7 @@ CyberArk.TransparentConnection.BooleanUserParameter, CyberArk.PasswordVault.Tran
 
 ## 07 - PSMP Installation
 
-### Create proxymng User and proxymanagers Group
+#### Create proxymng User and proxymanagers Group
 
 ```
 useradd proxymng
@@ -79,7 +79,7 @@ passwd proxymng
 groupadd proxymanagers
 usermod -a -G proxymanagers proxymng
 ```
-### Modify SSHD Config File
+#### Modify SSHD Config File
 ```
 vi /etc/ssh/sshd_config
 ```
@@ -94,17 +94,17 @@ service sshd restart
 service sshd status
 ```
 
-### Change Directory to /home/localadmin/PSMP/
+#### Change Directory to /home/localadmin/PSMP/
 ```
 cd /home/localadmin/PSMP/
 ```
-### Unzip CyberArk Files
+#### Unzip CyberArk Files
 ```
 ls
 unzip PrivilegedSessionManagerSSHProxy-RHELinux8-Intel64-Rls-v1X.X.zip
 unzip psmpwiz1XX.zip
 ```
-### Set the following files to executable
+#### Set the following files to executable
 ```
 ls -ltr
 chmod 755 CARKpsmp-1X.xx.xx.xx.rpm
@@ -112,7 +112,7 @@ chmod 755 CreateCredFile
 chmod 755 psmpwiz1XX.sh
 ```
 
-### Run the PSMP install script
+#### Run the PSMP install script
 ```
 ./psmpwiz1XX.sh
 ```
@@ -183,7 +183,7 @@ cat -Wait -Tail 50 "C:\Program Files\CyberArk\PrivilegeCloudSecureTunnel\logs\pr
 
 ## 12 - CyberArk PSM with Microsoft Edge
 
-### Install Microsoft Edge
+#### Install Microsoft Edge
 Download and install microsoft edge. Ensure you select the correct operating system
 https://www.microsoft.com/en-us/edge?form=MA13FJ#evergreen
 
@@ -194,7 +194,7 @@ https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
 Extract the zip file and copy the msedgedriver.exe to the follwoing location:
 "C:\Program Files (x86)\Cyberark\PSM\Components\msedgedriver.exe"
 
-### Secure Web Application Connectors Framework
+#### Secure Web Application Connectors Framework
 
 https://cyberark-customers.force.com/mplace/s/#a3550000000EiCMAA0-a3950000000jjUwAAI
 
@@ -203,7 +203,7 @@ Copy all contents in the folder WebAppDispatcher-v13.0.0.87\Components
 And paste in C:\Program Files (x86)\Cyberark\PSM\Components 
 This process will overwrite many files.
 
-### App locker
+#### App locker
 
 In the"-- Allowed DLLs --" section add the follwoing line
 
@@ -225,7 +225,7 @@ NOTE: this is different to the NATIVEIMAGES above.
     <Libraries Name="NATIVEIMAGES" Type="Dll" Path="%WINDIR%\ASSEMBLY\NATIVEIMAGES_V4.0.30319_32\*" Method="Path" />
 ```
 
-### PSM Components Options configuration
+#### PSM Components Options configuration
 
 Administration  -> Configuration Options
 
