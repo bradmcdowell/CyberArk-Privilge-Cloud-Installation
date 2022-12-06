@@ -1,16 +1,15 @@
 # CyberArk Privilege Cloud Installation
-CyberArk Privilege Cloud Installation Notes
+CyberArk Privilege Cloud installation cheat sheet.
 
-## 01 - Pre-Requisites Script
-Download Pre-Requisites Script from the SFE.
+## 01 - Download Links
 
 CyberArk Privilege Cloud Tools
 
-https://cyberark-customers.force.com/mplace/s/#a352J000000GWAZQA4-a392J000002tNgLQAU
+https://cyberark-customers.force.com/mplace/s/#--Privilege+Cloud+Tools
 
 CyberArk Privilege Cloud
 
-https://cyberark-customers.force.com/mplace/s/#software-aK42J0000000DSrSAM-
+https://cyberark-customers.force.com/mplace/s/#software#---Name-CyberArk%20Privilege%20Cloud
 
 CyberArk Identity connector
 
@@ -32,15 +31,18 @@ https://docs.cyberark.com/Product-Doc/OnlineHelp/PrivCloud/Latest/en/Content/Pri
 ## 03 - Secure Tunnel
 
 Install Secure Tunnel
+The credntials for the installeruser will be required.
 
 ## 04 - CyberArk Identity
 
+Extract CyberArk-Identity-Management-Suite-win64.zip and run exe as administraotr.
 
+The credntials for the installeruser will be required.
 ## 05 - PSM Certificate and HTML5 Gateway
 
 ### PSM Server Change Certificate
 
-```
+``` powershell
 #Copy the thumbprint for the certificate you have the Private Key of (usually the personal certificate of the machine unless the customer followed your instructions to build the CA from scratch)
 
 Get-ChildItem "Cert:\LocalMachine\My"
@@ -52,8 +54,6 @@ $PATH = (Get-WmiObject -class "Win32_TSGeneralSetting" -Namespace root\cimv2\ter
 Set-WmiInstance -Path $PATH -argument @{SSLCertificateSHA1Hash="<INSERT-Thumbprint-HERE>"}
 
 ```
-
-
 
 Configure the connection component to use the HTML5 GW
 
