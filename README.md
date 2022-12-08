@@ -26,6 +26,22 @@ Network Requirements
 
 https://docs.cyberark.com/Product-Doc/OnlineHelp/PrivCloud/Latest/en/Content/Privilege%20Cloud/PrivCloud-sys-req-networks.htm?tocpath=Setup%7CSystem%20requirements%7C_____1
 
+### Connector Install Input Requirements
+
+Customer ID (Used in Pre-Requisites Script)
+```
+XXXXX-XXXXXX-XXXXXX-XXXXX format
+```
+
+Privilege Cloud Web Portal
+```
+https://<subdomain>.cyberark.cloud/privilegecloud
+```
+
+Privilege Cloud Vault Address
+```
+vault-<subdomain>.privilegecloud.cyberark.cloud
+```
 
 
 ## 03 - Secure Tunnel
