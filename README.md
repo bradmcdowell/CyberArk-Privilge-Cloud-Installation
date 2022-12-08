@@ -44,6 +44,7 @@ The credntials for the installeruser will be required.
 
 ### Optional Self-Signed Certificate
 
+Us this script to generate a self-signed certificate if there in't an internal CA avalilable.
 ``` powershell
 New-SelfSignedCertificate -DnsName "cyberarkpsm.domain.com", "psmserver1.domain.com", "psmserver2.domain.com" -NotAfter (Get-Date).AddYears(3) -TextExtension @("2.5.29.37={text}1.3.6.1.5.5.7.3.1") -KeyLength 4096 -KeyExportPolicy Exportable -CertStoreLocation "cert:\LocalMachine\My"
 ```
