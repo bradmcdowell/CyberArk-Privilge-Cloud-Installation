@@ -92,7 +92,30 @@ CyberArk.TransparentConnection.BooleanUserParameter, CyberArk.PasswordVault.Tran
 
 
 
-## 06 - Loadbalancer
+## 06 - Loadbalancer - PSM Health Check
+
+### Requirements
+Downlaod the PSM Health Check Script
+https://cyberark-customers.force.com/mplace/s/#--PSM+Health+check
+
+Download .NET Core Runtime 6.0.X
+https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-6.0.12-windows-hosting-bundle-installer
+
+### Run the HealthCheck.ps1 script
+``` powershell
+.\HealthCheck.ps1 -installPath "E:\Program Files (x86)\Cyberark\PSM"
+```
+or
+Use this command when CyberArk has been installed on a different drive letter.
+``` powershell
+.\HealthCheck.ps1 -installPath "E:\Program Files (x86)\Cyberark\PSM"
+```
+
+
+### Test Health Check
+``` powershell
+Invoke-WebRequest -uri https://fqdn/psm/api/health
+```
 
 ## 07 - PSMP Installation
 
