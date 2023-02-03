@@ -290,4 +290,12 @@ RunValidations - Vaule = No
 EnableTrace - Value = Yes or No
 
 
+## 13 - Google Chrome Download and Install
+
+``` powershell
+Start-BitsTransfer "https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise64.msi" $env:TEMP\GoogleChromeStandaloneEnterprise64.msi
+$chromeinstaller = "$env:TEMP\GoogleChromeStandaloneEnterprise64.msi"
+msiexec.exe /package $chromeinstaller
+```
+
 
