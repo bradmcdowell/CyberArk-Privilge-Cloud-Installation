@@ -10,20 +10,18 @@ CyberArk Privilege Cloud
 
 https://cyberark-customers.force.com/mplace/s/#software#---Name-CyberArk%20Privilege%20Cloud
 
-CyberArk Identity connector
-
-https://edge.idaptive.app/ProxyDownload/CyberArk-Identity-Management-Suite-win64.zip
+CyberArk Identity connector - See section 14 below
 
 
 ## 02 - Connector Install
 
-Hardware Requirements
+Connector Hardware Requirements
 
-https://docs.cyberark.com/Product-Doc/OnlineHelp/PrivCloud/Latest/en/Content/Privilege%20Cloud/PrivCloud-sys-req-connector.htm?tocpath=Setup%7CSystem%20requirements%7C_____2
+https://docs.cyberark.com/Product-Doc/OnlineHelp/PrivCloud-SS/Latest/en/Content/Privilege%20Cloud/PrivCloud-sys-req-connector.htm#Hardwarerequirements
 
-Network Requirements
+Outbound traffic network and port requirements
 
-https://docs.cyberark.com/Product-Doc/OnlineHelp/PrivCloud/Latest/en/Content/Privilege%20Cloud/PrivCloud-sys-req-networks.htm?tocpath=Setup%7CSystem%20requirements%7C_____1
+https://docs.cyberark.com/Product-Doc/OnlineHelp/PrivCloud-SS/Latest/en/Content/Privilege%20Cloud/PrivCloud-sys-req-networks.htm
 
 ### Connector Install Input Requirements
 
