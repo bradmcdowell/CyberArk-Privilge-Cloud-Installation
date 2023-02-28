@@ -1,4 +1,3 @@
-# CyberArk Privilege Cloud Installation
 CyberArk Privilege Cloud installation cheat sheet.
 
 ## 01 - Download Links
