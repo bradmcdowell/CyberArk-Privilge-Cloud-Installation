@@ -87,6 +87,7 @@ HTML5 Gateway
 CyberArk.TransparentConnection.BooleanUserParameter, CyberArk.PasswordVault.TransparentConnection
 ```
 
+![image](https://user-images.githubusercontent.com/65890052/227809357-6edddc17-ae9f-4ed3-8a47-ae427045e556.png)
 
 
 ## 06 - Loadbalancer - PSM Health Check
