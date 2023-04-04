@@ -202,14 +202,14 @@ https://cyberark-customers.force.com/s/article/How-does-CPM-manage-Windows-accou
 
 This command is useful to determine what applications can’t run because of AppLocker.
 
-```
+``` powershell
 Get-WinEvent -LogName "Microsoft-Windows-AppLocker/EXE and DLL" |Where-Object {$_.LevelDisplayName -ne "Information"} |Format-Table -AutoSize| Out-File C:\AppLocker.txt -Width 1000
 ```
 
 ## 10 - Logs
 
 CPM
-```
+``` powershell
 cat -Wait -Tail 50 .\pm.log
 ```
 
@@ -218,20 +218,20 @@ PSM
 
 Secure Tunnel
 
-```
+``` powershell
 cat -Wait -Tail 50 "C:\Program Files\CyberArk\PrivilegeCloudSecureTunnel\logs\privilege-cloud-securetunnel-service.log"
 ```
 
 ## 11 - RSAT
 
 -- PSM Components -- Section
-```
+```xml
   <Application Name="MMC" Type="Exe" SessionType="*" Path="c:\windows\system32\mmc.exe" Method="Hash" />
 ```
 
 -- Allowed DLLs -- located at the last section
 
-```
+```xml
     <Libraries Name="LIBEAY32" Type="Dll" Path="%OSDRIVE%\ORACLE\INSTANTCLIENT\LIBEAY32.DLL" Method="Path" />
 ```
 
@@ -261,12 +261,12 @@ This process will overwrite many files.
 
 In the"-- Allowed DLLs --" section add the follwoing line
 
-```
+```xml
     <Libraries Name="NATIVEIMAGES" Type="Dll" Path="%WINDIR%\ASSEMBLY\NATIVEIMAGES_V4.0.30319_32\*" Method="Path" SessionType="*" />
 ```
 
 In the "-- Microsoft Edge process --" section, uncomment the Edge application and add the EdgeDrive line.
-```
+```xml
     <Application Name="Edge" Type="Exe" Path="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" Method="Publisher" />
     <Application Name="EdgeDriver" Type="Exe" Path="C:\Program Files (x86)\Cyberark\PSM\Components\msedgedriver.exe" Method="Publisher" />
 
@@ -275,7 +275,7 @@ In the "-- Microsoft Edge process --" section, uncomment the Edge application an
 In the "-- Allowed DLLs --" section add NATIVEIMAGES.
 NOTE: this is different to the NATIVEIMAGES above.
 
-```
+```xml
     <Libraries Name="NATIVEIMAGES" Type="Dll" Path="%WINDIR%\ASSEMBLY\NATIVEIMAGES_V4.0.30319_32\*" Method="Path" />
 ```
 
