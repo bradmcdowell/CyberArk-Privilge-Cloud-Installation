@@ -26,6 +26,8 @@ https://docs.cyberark.com/Product-Doc/OnlineHelp/PrivCloud-SS/Latest/en/Content/
 ### Connector Install Input Requirements
 
 Customer ID (Used in Pre-Requisites Script)
+
+{% include codeHeader.html %}
 ```
 XXXXX-XXXXXX-XXXXXX-XXXXX format
 ```
