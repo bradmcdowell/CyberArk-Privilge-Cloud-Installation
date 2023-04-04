@@ -40,6 +40,15 @@ Privilege Cloud Vault Address
 vault-<subdomain>.privilegecloud.cyberark.cloud
 ```
 
+### Connector Management
+
+Handy command to watch the Connector Managment Logs
+
+Connector Managment logging documentation [here](https://docs.cyberark.com/Product-Doc/OnlineHelp/PrivCloud-SS/Latest/en/Content/Setup/CM_Troubleshooting.htm).
+
+``` powershell
+cat -wait -tail 50 'C:\Program Files\CyberArk\Management Agent\Logs\client_log.txt'
+```
 
 ## 03 - Secure Tunnel
 
