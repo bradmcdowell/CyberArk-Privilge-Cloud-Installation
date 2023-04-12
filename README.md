@@ -302,8 +302,8 @@ EnableTrace - Value = Yes or No
 This script downloads Google Chrome 64bit and executes the msi installer.
 ``` powershell
 Start-BitsTransfer "https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise64.msi" $env:TEMP\GoogleChromeStandaloneEnterprise64.msi
-$chromeinstaller = "$env:TEMP\GoogleChromeStandaloneEnterprise64.msi"
-msiexec.exe /package $chromeinstaller
+$chromeinstaller = "$env:TEMP\GoogleChromeStandaloneEnterprise64.msi"
+msiexec.exe /package $chromeinstaller
 ```
 ### Google Chrome Driver
 Downlaod the [Google Chrome Driver](https://chromedriver.chromium.org/downloads) and place it in the "C:\Program Files (x86)\CyberArk\PSM\Components\" folder
@@ -322,8 +322,8 @@ Edit file "C:\Program Files (x86)\CyberArk\PSM\Hardening\PSMConfigureAppLocker.x
 
 ## 14 - Script to install CyberArk Identity Connector
 ``` powershell
-Start-BitsTransfer "https://edge.idaptive.app/ProxyDownload/CyberArk-Identity-Management-Suite-win64.zip" $env:TEMP\CyberArk-Identity-Management-Suite-win64.zip
-$IdentityZipPackage = "$env:TEMP\CyberArk-Identity-Management-Suite-win64.zip"
+Start-BitsTransfer "https://edge.idaptive.app/ProxyDownload/CyberArk-Identity-Management-Suite-win64.zip" $env:TEMP\CyberArk-Identity-Management-Suite-win64.zip
+$IdentityZipPackage = "$env:TEMP\CyberArk-Identity-Management-Suite-win64.zip"
 Expand-Archive $IdentityZipPackage -DestinationPath $env:TEMP\CyberArk-Identity-Management-Suite-win64
 $InstallerName = Get-ChildItem -Path $env:TEMP\CyberArk-Identity-Management-Suite-win64\CyberArk-Identity*.exe
 $InstallEXE = $InstallerName.Name
