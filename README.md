@@ -301,7 +301,7 @@ EnableTrace - Value = Yes or No
 
 This script downloads Google Chrome 64bit and executes the msi installer.
 ``` powershell
-Start-BitsTransfer "https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise64.msi" $env:TEMP\GoogleChromeStandaloneEnterprise64.msi
+Start-BitsTransfer "https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise64.msi" $env:TEMP\GoogleChromeStandaloneEnterprise64.msi
 $chromeinstaller = "$env:TEMP\GoogleChromeStandaloneEnterprise64.msi"
 msiexec.exe /package $chromeinstaller
 ```
