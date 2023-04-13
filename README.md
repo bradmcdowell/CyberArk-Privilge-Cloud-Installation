@@ -332,6 +332,9 @@ Start-Process $env:TEMP\CyberArk-Identity-Management-Suite-win64\$InstallEXE
 
 
 ## 15 - Script set permissions for Reconcile Group
+
+Instructions below are based on [this kb article.](https://cyberark-customers.force.com/s/article/How-do-I-reconcile-a-domain-admin-account-without-granting-domain-admin-membership-to-the-reconcile-account)
+
 To give the Reconcile Group the minimum permissions to change user passwords. 
 
 From Active Directory (You must have the Advanced Features view enabled) to proceed Right click on the domain > Properties
