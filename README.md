@@ -317,7 +317,7 @@ Edit file "C:\Program Files (x86)\CyberArk\PSM\Hardening\PSMConfigureAppLocker.x
     <!-- If relevant, uncomment this part to allow Google Chrome webform based connection clients
     End of Google Chrome process comment -->
     <Application Name="GoogleChrome" Type="Exe" Path="C:\Program Files\Google\Chrome\Application\chrome.exe" Method="Publisher" />
-    <Application Name="GoogleChromeDriver" Type="Exe" Path="C:\Program Files (x86)\CyberArk\PSM\Components\chromedriver.exe" Method="Publisher" />
+    <Application Name="GoogleChromeDriver" Type="Exe" Path="C:\Program Files (x86)\CyberArk\PSM\Components\chromedriver.exe" Method="Hash" />    
 ```
 
 ## 14 - Script to install CyberArk Identity Connector
