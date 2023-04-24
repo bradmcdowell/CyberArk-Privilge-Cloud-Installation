@@ -204,7 +204,7 @@ https://cyberark-customers.force.com/s/article/How-does-CPM-manage-Windows-accou
 This command is useful to determine what applications can’t run because of AppLocker.
 
 ``` powershell
-Get-WinEvent -LogName "Microsoft-Windows-AppLocker/EXE and DLL" |Where-Object {$_.LevelDisplayName -ne "Information"} |Format-Table -AutoSize| Out-File C:\AppLocker.txt -Width 1000
+Get-WinEvent -LogName "Microsoft-Windows-AppLocker/EXE and DLL" |Where-Object {$_.LevelDisplayName -ne "Information"} | Select-Object -First 200 | Format-Table
 ```
 
 ## 10 - Logs
