@@ -243,6 +243,7 @@ cat -Wait -Tail 50 "C:\Program Files\CyberArk\PrivilegeCloudSecureTunnel\logs\pr
 
 ```xml
     <Libraries Name="LIBEAY32" Type="Dll" Path="%OSDRIVE%\ORACLE\INSTANTCLIENT\LIBEAY32.DLL" Method="Path" />
+    <Libraries Name="LIBEAY32-WIN" Type="Dll" Path="%WINDIR%\LIBEAY32.DLL" Method="Path" SessionType="*" />
 ```
 
 ## 12 - CyberArk PSM with Microsoft Edge
