@@ -127,6 +127,15 @@ Invoke-WebRequest -uri https://fqdn/psm/api/health
 
 ## 07 - PSMP Installation
 
+#### Download PSMP Installation Script
+
+Use the follwoing command to downlaod the psmpwiz1xxx.sh script. Make sure it is placed in the same folder as PrivilegedSessionManagerSSHProxy-RHELinux8-Intel64-Rls-v1X.X.zip
+
+```
+cd /home/<username>/PSMP/
+wget https://raw.githubusercontent.com/pCloudServices/psmpwiz/main/psmpwiz1310.sh
+```
+
 #### Create proxymng User and proxymanagers Group
 
 ```
