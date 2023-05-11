@@ -338,6 +338,7 @@ Expand-Archive $IdentityZipPackage -DestinationPath $env:TEMP\CyberArk-Identity-
 $InstallerName = Get-ChildItem -Path $env:TEMP\CyberArk-Identity-Management-Suite-win64\CyberArk-Identity*.exe
 $InstallEXE = $InstallerName.Name
 Start-Process $env:TEMP\CyberArk-Identity-Management-Suite-win64\$InstallEXE
+Write-Host "Finished"
 ```
 
 
