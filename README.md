@@ -232,18 +232,25 @@ Secure Tunnel
 cat -Wait -Tail 50 "C:\Program Files\CyberArk\PrivilegeCloudSecureTunnel\logs\privilege-cloud-securetunnel-service.log"
 ```
 
-## 11 - RSAT
+## 11 - RSAT Tools
 
--- PSM Components -- Section
-```xml
-  <Application Name="MMC" Type="Exe" SessionType="*" Path="c:\windows\system32\mmc.exe" Method="Hash" />
+The follwoing notes are based on the [How to use Add PSMApplication](https://cyberark-customers.force.com/s/article/How-to-use-Add-PSMApplication) documenation.
+
+Step 1: [Download Privilege Cloud Tools](https://cyberark-customers.force.com/mplace/s/#a352J000000GWAZQA4-a392J000002tNgLQAU) and copy to C:\CyberArk folder on the connector soerver.
+
+Step 2: Navigate and extract the Add-PSMApps
+
+Step 3: Run a Powershell session as Administrator and run the follwoing sample command.
+
+This command adds ADUC,GPMC and a GenericMMC (RSAT) console 
+```Powershell
+.\Add-PSMApps.ps1 -Application "ADUC","GPMC","GenericMMC" -MscPath "C:\PSMApps\RSAT.msc" -ComponentName "RSAT" -ComponentDisplayName "RSAT" -HTML5 "OffByDefault" -PortalUrl "https://subdomain.privilegecloud.cyberark.cloud"
 ```
 
--- Allowed DLLs -- located at the last section
+This command adds ADUC,GPMC only
 
-```xml
-    <Libraries Name="LIBEAY32" Type="Dll" Path="%OSDRIVE%\ORACLE\INSTANTCLIENT\LIBEAY32.DLL" Method="Path" />
-    <Libraries Name="LIBEAY32-WIN" Type="Dll" Path="%WINDIR%\LIBEAY32.DLL" Method="Path" SessionType="*" />
+```Powershell
+.\Add-PSMApps.ps1 -Application "ADUC","DNS" -HTML5 "OffByDefault" -PortalUrl "https://subdomain.privilegecloud.cyberark.cloud"
 ```
 
 ## 12 - CyberArk PSM with Microsoft Edge
