@@ -418,3 +418,7 @@ dsacls.exe $AdminSDHolerDN /G $ReconcileGroup":CA;Reset Password"
 dsacls.exe $AdminSDHolerDN /G $ReconcileGroup":RP;LockoutTime" $ReconcileGroup":WP;LockoutTime"
 ```
 
+## 16 - CyberArk Identity: How to configure or restrict attribute matching for the CyberArk Identity Connector
+
+https://cyberark-customers.force.com/s/article/CyberArk-Identity-How-to-configure-or-restrict-attribute-matching-for-the-CyberArk-Identity-Connector
+
