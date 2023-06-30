@@ -136,6 +136,20 @@ cd /home/<username>/PSMP/
 wget https://raw.githubusercontent.com/pCloudServices/psmpwiz/main/psmpwiz1310.sh
 ```
 
+#### Test Network Connectivity
+
+The follwoing commands will test outbound connectivity from the PSMP server to Privilege Cloud.
+
+```sh
+curl -v telnet://<subdomain>.privilegecloud.cyberark.cloud:443
+
+curl -v telnet://<subdomain>.cyberark.cloud:443
+
+curl -v telnet://<subdomain>.privilegecloud.cyberark.cloud:1858
+
+curl -v telnet://<CyberArkIdentityID>.id.cyberark.cloud:443
+```
+
 #### Create proxymng User and proxymanagers Group
 
 ```
